@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Local Area Deals">
+	<meta name="keywords" content="coupons, value, deals, specials, save, money, buck" />
+	<title>The Value Deals</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	
+	<![endif]-->
+	
+	<!--[if lt IE 8]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js " type="text/javascript"></script>
+	<![endif]-->
+	
+<!--JS Libraries-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js " type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js" type="text/javascript"></script>
+	
+<!--Stylesheets	-->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+	
+</head>
+<body>
+	
+	
+
+	<header class="gradient">
+		<img src="img/logo.png" alt="The Value Deals" id="logo" /><!-- Replace with JS animated version -->
+		
+		<a href="#">Login</a>
+		
+		<div id="cityDropDown" class="centerWrap">
+			
+			<form method="post" action="#">
+				<label for="City-StateORZip">City, State or Zip</label>
+				<input type="text" name="City-StateORZip"/>
+			</form>
+		
+			<ul>
+				<li>Washington</li>
+				<li>Oregon</li>
+				<li>Idaho</li>
+				<li>Montana</li>
+				<li>Wyoming</li>
+			</ul>
+		</div>
+		
+	</header>
+	
+	<nav class="clearfix">
+		<div id="navBG">
+		</div>
+		
+		<div class="centerWrap gradient">
+		
+			<a href="#"><div class="greenBack">
+				Today's Deal
+			</div></a>
+		
+			<a href="#"><div class="greenBack">
+				Daily Deals
+			</div></a>
+		
+			<a href="http://www.valuescoupons.com"><div class="orangeBack">
+				Coupons
+			</div></a>
+		</div> <!-- END CLASS centerWrap -->
+	</nav>
+	
+	<div class="centerWrap">
+	
+		<section><!-- This is the Main Window -->
+			
+			
+			
+			
+			
+			
+			<div class="tabbable"> <!-- Only required for left/right tabs -->
+			  <ul class="nav nav-tabs">
+			    <li class="active"><a href="#tab1" data-toggle="tab">Deal</a></li>
+			    <li><a href="#tab2" data-toggle="tab">Details</a></li>
+			    <li><a href="#tab3" data-toggle="tab">Reviews</a></li>
+			  </ul>
+			  
+			  <div class="tab-content">
+			    <div class="tab-pane active" id="tab1"><!-- START Tab 1 -->
+			      
+			      <img src="img/ad.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			      
+			      <div id="adCopyMain">
+			      	<hgroup>
+			      		<h1>$5.99</h1>
+			      		<h2>Waffle Breakfast</h2>
+			      		<h3>Jonesy's Family Restaurant</h3>
+			      	</hgroup>
+			      	
+			      	<p><strong>Time Left:</strong>4 Hours 25 Minutes</p>
+			      	<a href="#" class="btn btn-primary">Purchase Deal</a>
+			      
+			      	
+			      	
+			      	<a href="facebook.com" target="_blank" align="left"><img src="http://www.niftybuttons.com/rkc-social-set-1/facebook.png" border="0"></a>
+			      	
+			      	<a href="twitter.com" target="_blank" align="left"><img src="http://www.niftybuttons.com/rkc-social-set-1/twitter.png" border="0"></a>
+			      	
+			      	<a href="mailto:info@thevaluedeals.com" target="_blank" align="left" ><img src="http://www.niftybuttons.com/rkc-social-set-1/email.png" border="0"></a><!-- Need JS for email link and form -->
+			      </div>
+			      
+			    </div><!-- END Tab 1 -->
+			    
+			    <div class="tab-pane" id="tab2">
+			    	
+			    	<h2>Details</h2>
+			    	
+			      <p>Tincidunt decima minim duis lectorum nibh. Nihil usus quod nulla videntur velit. Ullamcorper iriure claram quod at in.</p>  
+			     <p>Mirum nostrud sed iusto quinta option. Insitam feugait formas vero option saepius. Nulla dolor lectores cum et eorum. </p>
+			      <p>Suscipit duis consequat suscipit ut possim. Sed delenit nihil illum nunc legunt. In habent nunc volutpat lectores enim.</p>
+			      
+			    </div>
+			    
+			    <div class="tab-pane" id="tab3">
+			    	
+			    	<h2>Reviews</h2>
+			    	
+			      <p>Tincidunt decima minim duis lectorum nibh. Nihil usus quod nulla videntur velit. Ullamcorper iriure claram quod at in.</p>  
+			      <p> Mirum nostrud sed iusto quinta option. Insitam feugait formas vero option saepius. Nulla dolor lectores cum et eorum. </p>
+			       <p>Suscipit duis consequat suscipit ut possim. Sed delenit nihil illum nunc legunt. In habent nunc volutpat lectores enim.</p>
+			    
+			    </div>
+			    
+			    
+			  </div>
+			</div>
+			
+		</section>
+		
+		<aside>
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+			<img src="img/ad2.jpg" class="floatLeft" /> <!--INJECTED PHP-->
+		</aside>
+		
+		<img src="img/checkOtherDeals.png" alt="Check out our other deals" />
+		
+		<aside>
+			<a href="#">Tammy Lee Tips</a>
+		</aside>
+	</div><!-- END CLASS centerWrap -->
+	
+	<footer>
+		<div class="centerWrap">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Select a Business</a></li>
+				<li><a href="#">Advertise With Us</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+			</ul>
+			
+			<p>&copy; 2013 The Value Deals</p>
+		</div><!-- END CLASS centerWrap -->
+	</footer>
+	
+</body>
+</html>
