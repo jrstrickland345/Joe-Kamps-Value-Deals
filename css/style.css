@@ -17,11 +17,13 @@ body{
 .centerWrap{
 	width: 960px;
 	margin: 0 auto;
+	position: relative; /*For the login box.*/
 }
 
 #adCopyMain h1{
 	color: red;
 	font-size: 6em;
+	margin-bottom: 50px;
 }
 
 /* Automatically clear elements for standards-compliant browsers */
@@ -37,6 +39,47 @@ body{
 	zoom: 1;
 }
 
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/*Login Styleing*/
+
+#loginBox{
+	background: background: #4ca8b3; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRjYThiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYTVjNjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #4ca8b3 0%, #2a5c62 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ca8b3), color-stop(100%,#2a5c62)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4ca8b3 0%,#2a5c62 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4ca8b3 0%,#2a5c62 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4ca8b3 0%,#2a5c62 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4ca8b3 0%,#2a5c62 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca8b3', endColorstr='#2a5c62',GradientType=0 ); /* IE6-8 */
+	
+	padding: 10px;
+	width: 218px;
+	float: right;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	top: 0px;
+	right: 9999999px;
+	}
+	
+	/*#loginBox:target{
+		right: 0px;
+	}
+*/
 /*Header Styleing*/
 
 header{
@@ -51,10 +94,25 @@ header{
 	background: linear-gradient(to bottom,  #89ac60 0%,#394f23 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89ac60', endColorstr='#394f23',GradientType=0 ); /* IE6-8 */
 	
+	
+	
+}
+
+header img:nth-of-type(2){  /*Margin on the Map*/
+	margin-right: 60px;
+	clear: right;
+}
+
+header a:first-of-type{
+	margin-right: 60px;
+}
+
+h3>span{
+	font-style: italic;
 }
 
 #logo{
-	margin: 0 0 30px 60px;
+	margin: 0 0 30px 0;
 }
 
 #cityDropDown{
@@ -62,6 +120,35 @@ header{
 	color: white;
 	height: 30px;
 	padding: 10px 10px 60px 10px;
+	overflow: hidden;
+	-webkit-transition: height 1s ease-in-out 1s;
+	-moz-transition:  height 1s ease-in-out 1s;
+	transition:  height 1s ease-in-out 1s;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#cityDropDown button{
+	margin-top: -12px;	
+}
+
+#cityDropDown>ul{
+	-moz-column-count: 5;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	column-count: 5;
+	column-gap: 10px;
+}
+
+#cityDropDown span{
+	font-weight: bold;
+	color: #89ac60;
+}
+
+#cityDropDown:hover{
+	height: 300px;
 }
 
 /*Nav Styleing*/
@@ -83,7 +170,16 @@ nav{
 }
 
 nav a{
-	float: left;
+	
+	color: white;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+}
+
+nav a:hover{
+	color: white;
 }
 
 .greenBack,.orangeBack{
@@ -92,9 +188,9 @@ nav a{
 	position: relative;
 	bottom: 20px;
 	text-align: center;
-	padding: 20px;
 	font-size: 2em;
-	margin: 0 82px 0 0;
+	margin: 0 142px 0 0;
+	float: left;
 }
 
 .greenBack {
@@ -132,6 +228,17 @@ section{
 	width: 75%;
 }
 
+#Purchase{
+	clear: left;
+	float: left;
+	margin-top: 50px;
+	
+}
+
+#socialMedia{
+	margin-top: 50px;
+}
+
 /*aside styleing*/
 
 aside{
@@ -139,7 +246,28 @@ aside{
 	border: 1px solid #black;
 	border-radius: 3px;
 	float: right;
-	width: 25%;
+	width: 23%;
+	margin-top: 32px;
+}
+
+aside h2{
+	text-align: center;
+}
+
+aside img{
+	max-width: 130px;
+	margin: 4px 48px;
+}
+
+#tammilee{
+	color: #EB008B;
+	font: 2em 'times new roman';
+}
+
+aside:last-of-type{
+	clear: right;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 /*footer styleing*/
@@ -147,4 +275,27 @@ aside{
 footer{
 	clear: both;
 	background: #666666;
+}
+
+footer ul li{
+	list-style: none;
+	float: left;
+	margin-right: 52px;
+}
+
+footer ul{
+	padding: 20px 0;
+}
+
+footer a{
+	color: white;
+}
+
+footer a:hover{
+	color: white;
+}
+
+footer p{
+	clear: left;
+	padding: 20px 0;
 }
