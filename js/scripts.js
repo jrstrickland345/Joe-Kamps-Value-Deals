@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 $('#loginLink').on('click' , function(){
 
 	var loginBox = $('#loginBox');
@@ -32,3 +34,4 @@ $('#password').keypress(keypressd);
 
 });
 
+});
