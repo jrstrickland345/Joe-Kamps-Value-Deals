@@ -34,4 +34,14 @@ $('#password').keypress(keypressd);
 
 });
 
+
+//$('#sliderBar').on('load', function() {
+//
+//	$(this).animate({outlineWidth: '0px'}, 'slow', function() {
+//		
+//		$(this).animate({outlineWidth: '5px'}, 'slow');
+//	});
+//
+//});
+
 });

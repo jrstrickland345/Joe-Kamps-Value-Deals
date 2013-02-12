@@ -12,7 +12,7 @@ scrollers styling
 .jThumbnailScroller .jTscrollerNextButton:hover,.jThumbnailScroller .jTscrollerPrevButton:hover{background-color:#d56916; opacity:1;}
 .jThumbnailScroller .jTscroller a{display:block; float:left; margin:6px 10px 6px 0; background:#fff;}
 .jThumbnailScroller .jTscroller a:hover{border-color:#fff;}
-.jThumbnailScroller .jTscroller a:first-child{margin-left:10px;}
+.jThumbnailScroller .jTscroller a:first-child{margin-left:0px; margin-top: 0px;}
 .jThumbnailScroller .jTscroller a img{border:none;}
 /* different styled scrollers */
 /* liquid width scroller */

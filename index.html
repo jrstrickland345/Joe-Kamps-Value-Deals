@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Local Area Deals">
 	<meta name="keywords" content="coupons, value, deals, specials, save, money, buck" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<title>The Value Deals</title>
 	
 	<!--[if lt IE 9]>
@@ -27,7 +29,17 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js " type="text/javascript"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js" type="text/javascript"></script>
 	<script src="jquery_thumbnail_scroller/jquery-ui-1.8.13.custom.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<!-- BeginOAWidget_Shared_2187524 -->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<!-- EndOAWidget_Shared_2187524 -->
 	
+	<script type="text/javascript" charset="utf-8" src="JS_Dollar_Animate_edgePreload.js"></script>
+	<style>
+	    .edgeLoad-EDGE-2310381 { visibility:hidden; }
+	</style>
+	
+
 <!--Stylesheets	-->
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -35,6 +47,13 @@
 	<link href="jquery_thumbnail_scroller/jquery.thumbnailScroller.css" rel="stylesheet" type="text/css" />
 	
 	
+<script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2187524" binding="#mapCanvas" />
+</oa:widgets>
+-->
+</script>
 </head>
 <body>
 	
@@ -43,8 +62,8 @@
 	<header class="gradient">
 		
 		<div class="centerWrap clearfix">
-		<img src="img/logo.png" alt="The Value Deals" id="logo" /><!-- Replace with JS animated version -->
-		
+		<!--<img src="img/logo.png" alt="The Value Deals" id="logo" />--><!-- Replace with JS animated version -->
+		<div id="Stage" class="EDGE-2310381"></div>
 		<a href="#loginBox" class="floatRight" id="loginLink">Login</a>
 		
 		<div id="loginBox">
@@ -54,12 +73,12 @@
 				<input type="password" name="password" placeholder="Password" id="password"/>
 				<br />
 				<input type="submit" name="loginBtn" value="Login" class="btn btn-primary floatRight"/>
-			
+				<a href="#">Signup</a>
 			</form>
 		
 		</div>
 		
-		<img src="img/map.png" class="floatRight"/>
+		<img src="img/map.png" class="floatRight" style="clear: right ;"/>
 		
 		<h3 class="floatRight clear">Current Location: <span>Coeur d'Alene</span></h3>
 		</div>
@@ -78,62 +97,62 @@
 			<ul>
 				<li><span>Washington</span>
 					<ul>
-						<li>Seattle/Techoma</li>
-						<li>Spokane</li>
-						<li>Vancouver</li>
-						<li>Everett</li>
-						<li>Olympia</li>
-						<li>Yakima</li>
-						<li>Bellingham</li>
-						<li>Tri-Cities</li>
+						<li><a href="#">Seattle/Techoma</a></li>
+						<li><a href="#">Spokane</a></li>
+						<li><a href="#">Vancouver</a></li>
+						<li><a href="#">Everett</a></li>
+						<li><a href="#">Olympia</a></li>
+						<li><a href="#">Yakima</a></li>
+						<li><a href="#">Bellingham</a></li>
+						<li><a href="#">Tri-Cities</a></li>
 						
 					</ul>
 				</li>
 				<li><span>Oregon</span>
 					<ul>
-						<li>Portland</li>
-						<li>Eugine</li>
-						<li>Salem</li>
-						<li>Bend</li>
-						<li>Medford</li>
-						<li>Springfield</li>
-						<li>Corvallis</li>
-						<li>Redmond</li>
+						<li><a href="#">Portland</a></li>
+						<li><a href="#">Eugine</a></li>
+						<li><a href="#">Salem</a></li>
+						<li><a href="#">Bend</a></li>
+						<li><a href="#">Medford</a></li>
+						<li><a href="#">Springfield</a></li>
+						<li><a href="#">Corvallis</a></li>
+						<li><a href="#">Redmond</a></li>
 					</ul>
 				</li>
 				<li><span>Idaho</span>
 					<ul>
-						<li>Boise</li>
-						<li>Nampa</li>
-						<li>Idaho Falls</li>
-						<li>Pocatello</li>
-						<li>Caldwell</li>
-						<li>Coeur d'Alene</li>
-						<li>Twin Falls</li>
-						<li>Lewiston</li>
+						<li><a href="#">Boise</a></li>
+						<li><a href="#">Nampa</a></li>
+						<li><a href="#">Idaho Falls</a></li>
+						<li><a href="#">Pocatello</a></li>
+						<li><a href="#">Caldwell</a></li>
+						<li><a href="#">Coeur d'Alene</a></li>
+						<li><a href="#">Twin Falls</a></li>
+						<li><a href="#">Lewiston</a></li>
 					</ul>
 				</li>
 				<li><span>Montana</span>
 					<ul>
-						<li>Billings</li>
-						<li>Missoula</li>
-						<li>Great Falls</li>
-						<li>Bozeman</li>
-						<li>Butte</li>
-						<li>Helena</li>
-						<li>Kalispell</li>
-						<li>Havre</li>
+						<li><a href="#">Billings</a></li>
+						<li><a href="#">Missoula</a></li>
+						<li><a href="#">Great Falls</a></li>
+						<li><a href="#">Bozeman</a></li>
+						<li><a href="#">Butte</a></li>
+						<li><a href="#">Helena</a></li>
+						<li><a href="#">Kalispell</a></li>
+						<li><a href="#">Havre</a></li>
 					</ul>
 				
 				</li>
 				<li><span>Wyoming</span>
 					<ul>
-						<li>Cheyenne</li>
-						<li>Casper</li>
-						<li>Laramie</li>
-						<li>Gillette</li>
-						<li>Rock Springs</li>
-						<li>Sheridan</li>
+						<li><a href="#">Cheyenne</a></li>
+						<li><a href="#">Casper</a></li>
+						<li><a href="#">Laramie</a></li>
+						<li><a href="#">Gillette</a></li>
+						<li><a href="#">Rock Springs</a></li>
+						<li><a href="#">Sheridan</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -147,17 +166,17 @@
 		
 		<div class="centerWrap gradient">
 		
-			<div class="greenBack">
-				<a href="#">Today's Deal</a>
-			</div>
+			<a href="#"><div class="greenBack">
+				<span>Today's Deal</span>
+			</div></a>
 		
-			<div class="greenBack">
-				<a href="#">Daily Deals</a>
-			</div>
+			<a href="deals.html"><div class="greenBack">
+				<span>Daily Deals</span>
+			</div></a>
 		
-			<div class="orangeBack">
-				<a href="http://www.valuescoupons.com">Coupons</a>
-			</div>
+			<a href="http://www.valuescoupons.com"><div class="orangeBack">
+				<span>Coupons</span>
+			</div></a>
 		</div> <!-- END CLASS centerWrap -->
 	</nav>
 	
@@ -167,7 +186,10 @@
 			
 			
 			
-			
+			<form method="post" action="signup.php">
+				<input type="submit" name="submit" value="Get Daily Deals" class="btn btn-primary floatRight" />
+				<input type="email" name="email" placeholder="Email" class="floatRight" />
+			</form>
 			
 			
 			<div class="tabbable"> <!-- Only required for left/right tabs -->
@@ -193,7 +215,7 @@
 			      	</hgroup>
 			      	
 			      	
-			      	<p><strong>Time Left:</strong>4 Hours 25 Minutes</p>
+			      	<p><strong>Time Left:&nbsp;</strong>4 Hours 25 Minutes</p>
 			      	
 			      	</div>
 			      
@@ -235,13 +257,15 @@
 			
 						
 		</section>
-		
 		<aside id="sliderBar">
-			<h2>More Deals</h2>
+		  <h2>More Deals</h2>
 		
 			<div id="tS2" class="jThumbnailScroller">
 			    <div class="jTscrollerContainer">
 			        <div class="jTscroller">
+			        
+			       			        
+			        	<!-- <a href="#"><img id="fixImage" src="#" class="floatLeft"  width="100" style="visibility: hidden;"/></a>-->
 			            <a href="#"><img src="img/deals/1.png" class="floatLeft" /></a> <!--INJECTED PHP-->
 			            <a href="#"><img src="img/deals/2.png" class="floatLeft" /></a> <!--INJECTED PHP-->
 			            <a href="#"><img src="img/deals/3.png" class="floatLeft" /></a> <!--INJECTED PHP-->
@@ -250,6 +274,7 @@
 			            <a href="#"><img src="img/deals/2.png" class="floatLeft" /></a> <!--INJECTED PHP-->
 			            <a href="#"><img src="img/deals/3.png" class="floatLeft" /></a> <!--INJECTED PHP-->
 			            <a href="#"><img src="img/deals/4.png" class="floatLeft" /></a> <!--INJECTED PHP-->
+			           
 			        </div>
 			    </div>
 			    <a href="#" class="jTscrollerPrevButton"></a>
@@ -257,6 +282,72 @@
 			</div>
 								
 		</aside>
+		<section>
+		  <div id="mapCanvas" style="width:50%; height:100%; min-width:300px; min-height:300px; position:absolute; margin-top:10px;"></div>
+            <script type="text/javascript">
+// BeginOAWidget_Instance_2187524: #mapCanvas
+
+	  // initialize the google Maps 	
+	
+     function initializeGoogleMap() {
+		// set latitude and longitude to center the map around
+		var latlng = new google.maps.LatLng(37.77, 
+											-122.4);
+		
+		// set up the default options
+		var myOptions = {
+		  zoom: 8,
+		  center: latlng,
+		  navigationControl: true,
+		  navigationControlOptions: 
+		  	{style: google.maps.NavigationControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.TOP_LEFT },
+		  mapTypeControl: true,
+		  mapTypeControlOptions: 
+		  	{style: google.maps.MapTypeControlStyle.DEFAULT,
+			 position: google.maps.ControlPosition.TOP_RIGHT },
+
+		  scaleControl: true,
+		   scaleControlOptions: {
+        		position: google.maps.ControlPosition.BOTTOM_LEFT
+    	  }, 
+		  mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  draggable: true,
+		  disableDoubleClickZoom: false,
+		  keyboardShortcuts: true
+		};
+		var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+		if (false) {
+			var trafficLayer = new google.maps.TrafficLayer();
+			trafficLayer.setMap(map);
+		}
+		if (false) {
+			var bikeLayer = new google.maps.BicyclingLayer();
+			bikeLayer.setMap(map);
+		}
+		if (false) {
+			addMarker(map,37.7715,-122.4,"We are here");
+		}
+	  }
+
+	  window.onload = initializeGoogleMap();
+
+	 // Add a marker to the map at specified latitude and longitude with tooltip
+	 function addMarker(map,lat,long,titleText) {
+	  	var markerLatlng = new google.maps.LatLng(lat,long);
+	 	var marker = new google.maps.Marker({
+      		position: markerLatlng, 
+      		map: map, 
+      		title:"We are here",
+			icon: ""});   
+	 }
+
+	
+// EndOAWidget_Instance_2187524
+            </script>
+        </section>
+		
+		
 		
 		<img src="img/arrow.png" class="floatRight" alt="Check out our other deals" />
 		
@@ -281,6 +372,9 @@
 			<p>&copy; 2013 The Value Deals</p>
 		</div><!-- END CLASS centerWrap -->
 	</footer>
+	
+	
+	</div>
 	
 </body>
 
